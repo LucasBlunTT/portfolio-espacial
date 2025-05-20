@@ -30,18 +30,20 @@ const NavBar = () => {
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex justify-between items-center max-md:px-2">
         <Link
           href="/"
           className="text-xl md:text-2xl font-bold text-white flex items-center gap-1"
         >
-          <span className="text-purple-500">&lt;</span>
-          Lucas <span className="text-purple-500">/</span>Silva
-          <span className="text-purple-500">&gt;</span>
+          <span className="text-purple-500 max-md:text-xl">&lt;</span>
+          <span className="max-md:text-xl">Lucas</span>
+          <span className="text-purple-500 max-md:text-xl">/</span>
+          <span className="max-md:text-xl">Silva</span>
+          <span className="text-purple-500 max-md:text-xl">&gt;</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 max-md:gap-2 max-md:text-sm max-md:mr-4">
           <Link
             href="#"
             className="text-white hover:text-purple-400 transition-colors"
@@ -79,7 +81,7 @@ const NavBar = () => {
           >
             <Button
               variant="outline"
-              className="border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"
+              className="border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white max-md:p-2 max-md:text-xs"
             >
               <Github className="w-4 h-4 mr-2" />
               Github
@@ -92,7 +94,7 @@ const NavBar = () => {
           >
             <Button
               variant="outline"
-              className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
+              className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white  max-md:p-2 max-md:text-xs"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

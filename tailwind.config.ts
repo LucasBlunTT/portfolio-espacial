@@ -57,6 +57,11 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      screens: {
+        'max-sm': { max: '640px' },
+        'max-md': { max: '768px' },
+        'max-lg': { max: '1024px' },
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
