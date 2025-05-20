@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import ProjectCard from './project-card';
 import { motion } from 'framer-motion';
+import { FaNodeJs } from 'react-icons/fa';
+import { SiTypescript, SiExpress, SiPostgresql } from 'react-icons/si';
 import projectNeon from '@/assets/neon.png';
 import whatIf from '@/assets/whatif.png';
 
@@ -14,7 +16,7 @@ const projects = [
       'API desenvolvida em TypeScript para gerenciamento de sistemas PACS (Picture Archiving and Communication System) na área médica. Implementa autenticação, gerenciamento de usuários e integração com sistemas de imagens médicas.',
     tags: ['TypeScript', 'Node.js', 'Express', 'API REST', 'PostgreSQL'],
     githubLink: 'https://github.com/LucasBlunTT/manager-pacs-api',
-    imageUrl: '/placeholder.svg?height=400&width=600',
+    icons: [<SiTypescript />, <FaNodeJs />, <SiExpress />, <SiPostgresql />],
     featured: false,
   },
   {
@@ -24,7 +26,7 @@ const projects = [
       'API para sistema de gerenciamento de farmácias, desenvolvida com TypeScript e Node.js. Implementa funcionalidades como cadastro de medicamentos, controle de estoque e gerenciamento de vendas.',
     tags: ['TypeScript', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     githubLink: 'https://github.com/LucasBlunTT/projeto-guarda-chuva-API',
-    imageUrl: '/placeholder.svg?height=400&width=600',
+    icons: [<SiTypescript />, <FaNodeJs />, <SiExpress />, <SiPostgresql />],
     featured: false,
   },
   {
@@ -46,26 +48,6 @@ const projects = [
     githubLink: 'https://github.com/LucasBlunTT/projeto-neon',
     imageUrl: projectNeon,
     featured: true,
-  },
-  {
-    id: 5,
-    title: 'API Avalia Aqui',
-    description:
-      'API para sistema de avaliações de produtos e serviços, permitindo que usuários compartilhem suas experiências e notas.',
-    tags: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
-    githubLink: 'https://github.com/LucasBlunTT/api-avalia-aqui',
-    imageUrl: '/placeholder.svg?height=400&width=600',
-    featured: false,
-  },
-  {
-    id: 6,
-    title: 'Vitrine Medicamentos API',
-    description:
-      'API para exibição e busca de medicamentos, com informações detalhadas sobre cada produto, incluindo bulas e contraindicações.',
-    tags: ['TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
-    githubLink: 'https://github.com/LucasBlunTT/VitrineMedicamentos-API',
-    imageUrl: '/placeholder.svg?height=400&width=600',
-    featured: false,
   },
 ];
 
@@ -120,13 +102,37 @@ const ProjectsSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-              githubLink={project.githubLink}
-              imageUrl={project.imageUrl}
-            />
+            {filter === 'front' ? (
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                tags={project.tags}
+                githubLink={project.githubLink}
+                imageUrl={project.imageUrl ?? ''}
+              />
+            ) : (
+              <div className="bg-[#0a0a20] p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold text-white mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 mb-4">{project.description}</p>
+                <div className="flex gap-2 mb-4">
+                  {project.icons?.map((icon, idx) => (
+                    <span key={idx} className="text-2xl text-purple-500">
+                      {icon}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-400 hover:underline"
+                >
+                  Ver no GitHub
+                </a>
+              </div>
+            )}
           </motion.div>
         ))}
       </div>
