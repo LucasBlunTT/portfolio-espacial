@@ -14,7 +14,7 @@ import {
   SiExpress,
   SiStrapi,
   SiHtml5,
-  SiCss,
+  SiCss3,
   SiDaisyui,
   SiMongodb,
   SiOpenapiinitiative,
@@ -67,7 +67,7 @@ const skills = {
       icon: <FaReact className="text-blue-500" />,
     },
     { name: 'HTML5', level: 95, icon: <SiHtml5 className="text-orange-500" /> },
-    { name: 'CSS3', level: 90, icon: <SiCss className="text-blue-500" /> },
+    { name: 'CSS3', level: 90, icon: <SiCss3 className="text-blue-500" /> },
     {
       name: 'DaisyUI',
       level: 75,
