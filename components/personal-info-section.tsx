@@ -40,7 +40,7 @@ export default function PersonalSectionInfo() {
         <div className="relative">
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/30 relative z-10">
             <Image
-              src="https://media.licdn.com/dms/image/v2/D4D03AQHOcJUHXswpuA/profile-displayphoto-shrink_400_400/B4DZah4qouGwAg-/0/1746472709844?e=1752710400&v=beta&t=kU9j7ztj2nho4LtRuHlCq99agqwBUCmE7omhDQpXCVQ"
+              src="https://avatars.githubusercontent.com/u/83377646?s=400&u=22f31e7a0d7deeaad2f29f34c8701a5f2ee359f7&v=4"
               alt="Foto de perfil"
               width={320}
               height={320}
