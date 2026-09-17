@@ -11,12 +11,21 @@ import {
   SiStyledcomponents,
   SiPostgresql,
   SiMysql,
-  SiOracle,
   SiExpress,
-  SiIced,
-  SiRsocket,
   SiStrapi,
+  SiHtml5,
+  SiCss,
+  SiDaisyui,
+  SiMongodb,
+  SiOpenapiinitiative,
+  SiKubernetes,
+  SiGooglecloud,
+  SiGithubactions,
+  SiSocketdotio,
 } from 'react-icons/si';
+import { MdOutlineAccountTree } from 'react-icons/md';
+import { RiRobot2Fill } from 'react-icons/ri';
+import { GrOracle } from 'react-icons/gr';
 
 const skills = {
   frontend: [
@@ -57,6 +66,13 @@ const skills = {
       level: 80,
       icon: <FaReact className="text-blue-500" />,
     },
+    { name: 'HTML5', level: 95, icon: <SiHtml5 className="text-orange-500" /> },
+    { name: 'CSS3', level: 90, icon: <SiCss className="text-blue-500" /> },
+    {
+      name: 'DaisyUI',
+      level: 75,
+      icon: <SiDaisyui className="text-yellow-500" />,
+    },
   ],
   backend: [
     {
@@ -84,8 +100,13 @@ const skills = {
       level: 80,
       icon: <SiMysql className="text-orange-500" />,
     },
-    { name: 'Oracle', level: 75, icon: <SiOracle className="text-red-500" /> },
+    { name: 'Oracle', level: 75, icon: <GrOracle className="text-red-500" /> },
     { name: 'MySQL', level: 80, icon: <SiMysql className="text-blue-500" /> },
+    {
+      name: 'MongoDB',
+      level: 80,
+      icon: <SiMongodb className="text-green-500" />,
+    },
   ],
   api: [
     {
@@ -96,13 +117,38 @@ const skills = {
     {
       name: 'Websockets',
       level: 80,
-      icon: <SiRsocket className="text-blue-500" />,
+      icon: <SiSocketdotio className="text-blue-500" />,
+    },
+    {
+      name: 'OpenAPI',
+      level: 80,
+      icon: <SiOpenapiinitiative className="text-green-500" />,
+    },
+    {
+      name: 'Microsserviços',
+      level: 80,
+      icon: <MdOutlineAccountTree className="text-purple-400" />,
     },
   ],
   devops: [
     { name: 'Git', level: 95, icon: <FaGit className="text-orange-500" /> },
     { name: 'Docker', level: 85, icon: <FaDocker className="text-blue-500" /> },
-    { name: 'CI/CD', level: 80, icon: <SiIced className="text-purple-500" /> },
+    {
+      name: 'CI/CD',
+      level: 80,
+      icon: <SiGithubactions className="text-purple-500" />,
+    },
+    {
+      name: 'Kubernetes',
+      level: 70,
+      icon: <SiKubernetes className="text-blue-500" />,
+    },
+    { name: 'GCP', level: 75, icon: <SiGooglecloud className="text-red-500" /> },
+    {
+      name: 'IA Generativa',
+      level: 80,
+      icon: <RiRobot2Fill className="text-purple-400" />,
+    },
   ],
 };
 

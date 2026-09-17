@@ -17,11 +17,15 @@ export default function PersonalSectionInfo() {
             </span>
           </h2>
           <p className="text-gray-300 text-lg">
-            Sou um profissional motivado e versátil, sempre pronto para novos
-            desafios. Com paixão por aprendizado, dedico-me a entregar
-            resultados de alta qualidade. Com uma atitude positiva e mentalidade
-            de crescimento, estou pronto para fazer uma contribuição
-            significativa e alcançar grandes feitos.
+            Desenvolvedor Full Stack com experiência na construção de
+            plataformas web modernas, APIs escaláveis e arquiteturas
+            distribuídas. Atuo com React, Next.js, TypeScript, Node.js,
+            Express, MongoDB, PostgreSQL, Docker, Kubernetes e Google Cloud
+            Platform, sempre buscando entender o contexto de negócio para
+            propor soluções que aumentem escalabilidade, performance e
+            produtividade. Também aplico Inteligência Artificial Generativa
+            para acelerar desenvolvimento, documentação e automação de
+            tarefas.
           </p>
           <a
             href="/Currículo%20-%20Lucas%20da%20Silva.pdf"

@@ -12,6 +12,18 @@ export default function EducationSection() {
     <div className="border-l-2 border-purple-500 pl-6 pb-10 relative">
       <div className="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px]"></div>
       <h3 className="text-xl font-bold">
+        Tecnólogo em Análise e Desenvolvimento de Sistemas
+      </h3>
+      <p className="text-purple-400">Universidade CESUSC • 2021 - 2023</p>
+      <p className="mt-2 text-gray-300">
+        Formação em desenvolvimento de software, com foco em tecnologias web. Aprendizado em linguagens como JavaScript, TypeScript, HTML,
+        CSS e frameworks como React e Node.js. Experiência prática em projetos acadêmicos e desenvolvimento de aplicações web.
+      </p>
+    </div>
+
+    <div className="border-l-2 border-purple-500 pl-6 pb-10 relative">
+      <div className="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px]"></div>
+      <h3 className="text-xl font-bold">
         Curso DEVinHouse - Desenvolvedor Full-Stack Jr.
       </h3>
       <p className="text-purple-400">
@@ -26,18 +38,6 @@ export default function EducationSection() {
       </p>
       <p className="mt-2 text-gray-400 text-sm">
         Competências: React Native · Node.js · JavaScript · HTML5 · CSS · Tailwind CSS · PostgreSQL · TypeORM
-      </p>
-    </div>
-
-    <div className="border-l-2 border-purple-500 pl-6 pb-10 relative">
-      <div className="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px]"></div>
-      <h3 className="text-xl font-bold">
-        Tecnólogo em Análise e Desenvolvimento de Sistemas
-      </h3>
-      <p className="text-purple-400">Universidade CESUSC • 2021 - 2023</p>
-      <p className="mt-2 text-gray-300">
-        Formação em desenvolvimento de software, com foco em tecnologias web. Aprendizado em linguagens como JavaScript, TypeScript, HTML,
-        CSS e frameworks como React e Node.js. Experiência prática em projetos acadêmicos e desenvolvimento de aplicações web.
       </p>
     </div>
 
