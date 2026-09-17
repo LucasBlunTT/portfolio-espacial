@@ -23,7 +23,8 @@ export default function ExperienceSection() {
             de processos através de pipelines CI/CD e participação em
             processos ágeis (Scrum), code reviews e melhoria contínua da
             plataforma. Desenvolvimento de soluções utilizando recursos de
-            Inteligência Artificial Generativa e integração entre serviços.
+            Inteligência Artificial Generativa e integração entre serviços
+            com Apache Kafka.
           </p>
         </div>
 

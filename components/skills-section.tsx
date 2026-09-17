@@ -22,6 +22,7 @@ import {
   SiGooglecloud,
   SiGithubactions,
   SiSocketdotio,
+  SiApachekafka,
 } from 'react-icons/si';
 import { MdOutlineAccountTree } from 'react-icons/md';
 import { RiRobot2Fill } from 'react-icons/ri';
@@ -118,6 +119,11 @@ const skills = {
       name: 'Websockets',
       level: 80,
       icon: <SiSocketdotio className="text-blue-500" />,
+    },
+    {
+      name: 'Apache Kafka',
+      level: 75,
+      icon: <SiApachekafka className="text-gray-300" />,
     },
     {
       name: 'OpenAPI',
